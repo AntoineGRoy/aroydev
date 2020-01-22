@@ -86,7 +86,7 @@ const IndexPage = () => {
   return(
   <Layout>
     <Head pageTitle="Home"/>
-    <SEO title="Home of Improper design" />
+    <SEO title="Antoine Roy - Web Developer" />
     <div className="intro-container"><h1 className="intro-header">Hi, I'm Antoine</h1><Icon/></div>
     
     {articlesByCat.map(cat=><PostList categorySlug={cat[0].categories[0].slug} categoryName={cat[0].categories[0].name} data={cat}/>)}
