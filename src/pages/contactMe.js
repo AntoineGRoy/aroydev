@@ -26,6 +26,7 @@ const ContactMe = () => {
     Message
     <textarea rows="15" type="text" name="message" id="message"></textarea> 
   </label>
+     <div class="g-recaptcha" data-sitekey="6LdfzqcUAAAAALrt3ztxWifjPoaMWFIwES_JV9u2"></div>
   <button type="submit">Send</button>
 </form>
     </div>
