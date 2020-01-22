@@ -1,42 +1,27 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import headerStyles from "../css/header.module.scss"
+import Img from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+const Header = (props) => {
+  const pagesData = props.pagesData
+  const siteMetadata= props.siteMetadata
+  const logo = props.logo
+  return (
+      <div className={headerStyles.header}>
+        <div className={headerStyles.homecontainer}><Link to="/">
+          <Img className={headerStyles.logo} alt={siteMetadata.title} fluid={logo}/></Link>
+        </div>
+        <div className={headerStyles.navbarcontainer}>
+        <div key="contact-form">
+          <Link to="/contactMe">Contact</Link>
+        </div> 
+       
+        </div>
+      </div>
+    )
 }
 
 export default Header
+

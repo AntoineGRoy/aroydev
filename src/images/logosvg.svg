@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#000000" fill-opacity="0.934604458" fill="#242E9E" cx="128" cy="128" r="127"></circle>
+        <ellipse id="Oval" stroke="#979797" fill="#FFFBFB" cx="114" cy="75.5" rx="11" ry="12.5"></ellipse>
+        <path d="M137.440409,237.586345 L113.5,122 L80,236 L80.2494808,236.218315 C79.9995724,236.146424 79.7497477,236.073653 79.5,236 L80.7713567,41.0777778 C89.481121,41.9909511 93.7373504,40.1796799 93.5400448,35.6439642 C93.3427393,31.1082485 88.7635133,25.4943828 79.802367,18.802367 L168.197626,62.9999963 C148.526289,77.7779515 135.802367,101.304244 135.802367,127.802367 C135.802367,167.186292 163.910291,200.00526 201.160108,207.293241 C189.891965,214.913502 179.608532,221.028005 170.309807,225.63675 C159.221298,231.13257 148.264832,235.115768 137.440409,237.586345 Z M114,88 C120.075132,88 125,82.4035594 125,75.5 C125,68.5964406 120.075132,63 114,63 C107.924868,63 103,68.5964406 103,75.5 C103,82.4035594 107.924868,88 114,88 Z" id="Combined-Shape" stroke="#000000" fill="#FCF5E0"></path>
+        <circle id="Oval" stroke="#989EE1" stroke-width="6" fill="#000000" cx="116" cy="76" r="2"></circle>
+        <text id="OY" fill="#FBFBFB" font-family="DINAlternate-Bold, DIN Alternate" font-size="54" font-weight="bold">
+            <tspan x="139.033691" y="149">OY</tspan>
+        </text>
+        <polygon id="Triangle" stroke="#000000" fill="#F9AF09" transform="translate(101.674406, 166.829903) rotate(90.000000) translate(-101.674406, -166.829903) " points="32.004309 144.655496 53.8123769 154.56266 171.344504 189.004309 32.004309 189.004309"></polygon>
+    </g>
+</svg>
