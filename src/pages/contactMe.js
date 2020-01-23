@@ -31,12 +31,12 @@ const ContactMe = () => {
 </form>
     </div>
     <script>
-grecaptcha.ready(function() {
-    grecaptcha.execute('6Lct6tEUAAAAAIpp90oLcOZ6LtKFrLewaEgGaP7K', {action: 'homepage'}).then(function(token) {
-       ...
-    });
-});
-</script>
+    grecaptcha.ready(function() {
+				grecaptcha.execute("6Lct6tEUAAAAAIpp90oLcOZ6LtKFrLewaEgGaP7K", {action: "homepage"})
+				.then(function(token) {							            document.getElementById('captchaResponse').value = token;
+				});
+			});
+   </script>
   </Layout>
 )}
 
