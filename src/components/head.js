@@ -18,7 +18,16 @@ const Head = (props)=>{
           meta={[{ 
             name: 'description', 
             content: 'Antoine Roy is a Web Developer using React - HTML5 - CSS3 - ES6' 
-          }]}><script src="https://www.google.com/recaptcha/api.js"></script></Helmet>
+          }]}>  
+                <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+                <script>
+                    grecaptcha.ready(function() {
+                        grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
+                           ...
+                        });
+                    });
+                 </script>
+        </Helmet>
     )
 }
 export default Head
