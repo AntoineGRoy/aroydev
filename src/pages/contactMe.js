@@ -30,6 +30,13 @@ const ContactMe = () => {
   <button type="submit">Send</button>
 </form>
     </div>
+    <script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6Lct6tEUAAAAAIpp90oLcOZ6LtKFrLewaEgGaP7K', {action: 'homepage'}).then(function(token) {
+       ...
+    });
+});
+</script>
   </Layout>
 )}
 
