@@ -57,7 +57,7 @@ const IndexPage = () => {
     const categories= queryData.allWordpressCategory.edges.map(
       obj=>obj.node.slug
     ).filter(
-      x=>x!="uncategorized");
+      x=>x!=="uncategorized");
 
     let cat=[];
     for (let x= 0;x<categories.length;x++){
@@ -69,7 +69,7 @@ const IndexPage = () => {
       console.log('cat:   '+ categories[j])
       for(let i = 0; i< data.group.length; i++){
         console.log(data.group[i].edges[0].node.categories[0].slug)
-        if(data.group[i].edges[0].node.categories[0].slug==categories[j]){
+        if(data.group[i].edges[0].node.categories[0].slug===categories[j]){
           cat[j].push(data.group[i].edges[0].node)
         }
       };};

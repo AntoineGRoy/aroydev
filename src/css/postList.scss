@@ -2,6 +2,120 @@ $primary:rgba(0,0,0,.78);
 $green:#66af99;
 $yellow:#ffbb00;
 $blue:#00507f;
+@media only screen and (max-width: 600px){
+    .mainPostsContainer{
+        padding:1rem 0;
+    }
+    
+    .about-h2{
+        font-size: 1.5rem;
+        margin:1.5rem;
+        
+    }
+    /*About***********************************************************/
+    .about-me{
+        .mainPostsContainer{
+            margin:0;
+            .postContainer{
+                background: #ffbb00;
+                -webkit-box-shadow: 0px 0px 0px -1px rgba(0,0,0,0); 
+                box-shadow: 0px 0px 0px -1px rgba(0,0,0,0);
+                padding:.5rem 0;
+                width:100vw;
+                margin-left:0;
+                margin-right:0;
+                min-width: 250px;
+                .imgContainer{
+                    width:90px;
+                }
+                
+                .title-content{
+                
+                .title-excerpt-link{
+                    width:100%;
+                    margin:0 auto;
+                    h2.title{
+                        text-align:center;
+     
+                    }
+                    p.excerpt{
+                        font-style: italic;
+                        margin:1rem auto;
+                        line-height: 1.25rem;
+                        padding-top:.5rem;
+                        width:90%;
+                    }
+                }
+                }
+    
+            }
+            
+        }
+    }
+    /*Experiences***********************************************************/
+    .experiences{
+        .mainPostsContainer{
+            
+            .postContainer{
+                -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0); 
+                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                padding:.5rem;
+                width:100%;
+                
+                .imgContainer{width:150px;}
+                .title-excerpt-link{
+                    h2.title{
+                        font-weight: 700;
+                        margin:1rem .5rem;
+                    }
+                    p.excerpt{
+                        font-style: italic;
+                        margin:1rem .5rem 1rem .5rem;
+                        padding-top:.5rem;
+                        border-left: #00507f solid 5px;
+                        width:90%;
+                        padding-left:1rem; 
+                    }
+                }
+                
+                }
+    
+            }
+            
+        }
+    /*Work***********************************************************/
+    .work{
+       
+    
+        .mainPostsContainer{
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+            
+            .postContainer{
+            
+                position: relative;
+                min-width:250px;
+                max-width:500px;
+                min-height:5rem;
+                
+                -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4); 
+                box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
+                margin:1rem;
+            }
+            @media screen and (max-width:274px) {
+                .postContainer{
+                width: 175px; 
+                margin:.5rem;}
+            }
+            
+        }
+    }
+    
+
+}
+
+//end @media
 
 .mainPostsContainer{
     max-width:1400px;
@@ -16,6 +130,7 @@ $blue:#00507f;
 }
 /*About***********************************************************/
 .about-me{
+    order:1;
     .mainPostsContainer{
         display:flex;
         justify-content:space-evenly;
@@ -69,6 +184,7 @@ $blue:#00507f;
 }
 /*Experiences***********************************************************/
 .experiences{
+    order:3;
     .mainPostsContainer{
         display:flex;
         justify-content:space-evenly;
@@ -103,7 +219,7 @@ $blue:#00507f;
 /*Work***********************************************************/
 .work{
    
-
+order:2;
     .mainPostsContainer{
     display:flex;
     justify-content:space-evenly;

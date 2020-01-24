@@ -5,7 +5,6 @@ import Img from "gatsby-image"
 
 
 const Header = (props) => {
-  const pagesData = props.pagesData
   const siteMetadata= props.siteMetadata
   const logo = props.logo
   return (
