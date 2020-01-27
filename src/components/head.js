@@ -19,7 +19,6 @@ const Head = (props)=>{
             name: 'description', 
             content: 'Antoine Roy is a Web Developer using React - HTML5 - CSS3 - ES6' 
           }]}>
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lct6tEUAAAAAIpp90oLcOZ6LtKFrLewaEgGaP7K"></script>
 </Helmet>
         
     )
