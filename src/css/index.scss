@@ -1,61 +1,53 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Inconsolata:400,700|Roboto:300,400,500');
 /*Variables*/
 $primary:rgba(0,0,0,.78);
-$green:#66af99;
-$yellow:#ffbb00;
-$blue:#00507f;
-
+$green:#66BC45;
 
 body{
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 400;
-    color: $primary;
-    display: block;
-    max-width: 1400px;
-    
+    color: $primary;   
 }
 h1{
-    font-weight: 400; 
-    font-family: 'Inconsolata', monospace !important;
+    font-weight: 500; 
+    font-family: 'Inconsolata', serif !important;
     color:$primary;
-    font-size: 2.5rem;
+}
+.about-h2{
+    font-size: 2rem;
+    margin:2rem;
+}
+.introH1{
+    margin: 4rem 0 3rem 2rem;
 }
 
-@media only screen and (max-width: 600px){
-    body{
-    }
-    h1{
-        font-weight: 400; 
-        font-family: 'Inconsolata', monospace !important;
-        color:black;
-        font-size: 2rem;
-    }
-    .intro-container{
+.intro-container{
+    display: block;
+    max-width:1400px;
+    height: 20rem;
+    width:100vw;
+    background:#00507f;
+    display: flex;
+    margin-top:-3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1.intro-header{
+        margin-top:49px;
         display: block;
-        max-width:1300px;
-        height: 20rem;
-        width:100vw;
-        background:#00507f;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h1.intro-header{
-            margin-top:49px;
-            display: block;
-            font-weight: 300; 
-            font-size: 2rem;
-            color:white;
-            z-index: 10;
-        }
-        svg{
-            height:3rem; 
-            max-width: 80vw;
-        }
+        font-weight: 300; 
+        font-size: 2rem;
+        color:white;
+        z-index: 10;
     }
-    
-    //contact form styles *******************
-    
+    svg{
+        height:3rem; 
+        max-width: 350px;
+    }
+}
+//contact form styles *******************
+@media screen and (max-width:600px){
     .contact-link{
         width:100%;
         margin:0 auto;
@@ -108,40 +100,6 @@ h1{
     }
 }//@media600
 
-.intro-container{
-    display: block;
-    max-width:1300px;
-    height: 20rem;
-    width:100vw;
-    background:#00507f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1.intro-header{
-        margin-top:49px;
-        display: block;
-        font-weight: 300; 
-        font-size: 2rem;
-        color:white;
-        z-index: 10;
-    }
-    svg{
-        height:3rem; 
-        max-width: 80vw;
-    }
-}
-
-//contact form styles *******************
-
-.contact-link{
-    width:100%;
-    margin:0 auto;
-    display: block;
-}
-.contactHeader{
-    margin-top:60px;
-}
 .formContainer{
     display:flex;
     margin:0 auto;
@@ -184,6 +142,12 @@ h1{
         color:white;
     }
 }
+//EXPERIENCES
+.experiences,.about-me{
+a{
+    color:$primary;
+}
+}
 /*Reset Styles*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
@@ -207,8 +171,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-    vertical-align: baseline;
-    max-width:1400px;
+	vertical-align: baseline;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -219,8 +182,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
-    max-width: 1400px;
+	display: block;
 }
 
 body {

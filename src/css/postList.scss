@@ -3,117 +3,15 @@ $green:#66af99;
 $yellow:#ffbb00;
 $blue:#00507f;
 @media only screen and (max-width: 600px){
-    .mainPostsContainer{
-        padding:1rem 0;
-    }
     
-    .about-h2{
-        font-size: 1.5rem;
-        margin:1.5rem;
-        
-    }
-    /*About***********************************************************/
-    .about-me{
+    .about-me,.experience{
+        margin:0;
+        width:100%;
         .mainPostsContainer{
-            margin:0;
-            .postContainer{
-                background: #ffbb00;
-                -webkit-box-shadow: 0px 0px 0px -1px rgba(0,0,0,0); 
-                box-shadow: 0px 0px 0px -1px rgba(0,0,0,0);
-                padding:.5rem 0;
-                width:100vw;
-                margin-left:0;
-                margin-right:0;
-                min-width: 250px;
-                .imgContainer{
-                    width:90px;
-                }
-                
-                .title-content{
-                
-                .title-excerpt-link{
-                    width:100%;
-                    margin:0 auto;
-                    h2.title{
-                        text-align:center;
-     
-                    }
-                    p.excerpt{
-                        font-style: italic;
-                        margin:1rem auto;
-                        line-height: 1.25rem;
-                        padding-top:.5rem;
-                        width:90%;
-                    }
-                }
-                }
-    
-            }
-            
+            padding:0;
         }
     }
-    /*Experiences***********************************************************/
-    .experiences{
-        .mainPostsContainer{
-            
-            .postContainer{
-                -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0); 
-                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                padding:.5rem;
-                width:100%;
-                
-                .imgContainer{width:150px;}
-                .title-excerpt-link{
-                    h2.title{
-                        font-weight: 700;
-                        margin:1rem .5rem;
-                    }
-                    p.excerpt{
-                        font-style: italic;
-                        margin:1rem .5rem 1rem .5rem;
-                        padding-top:.5rem;
-                        border-left: #00507f solid 5px;
-                        width:90%;
-                        padding-left:1rem; 
-                    }
-                }
-                
-                }
-    
-            }
-            
-        }
-    /*Work***********************************************************/
-    .work{
-       
-    
-        .mainPostsContainer{
-        display:flex;
-        justify-content:space-evenly;
-        flex-wrap: wrap;
-            
-            .postContainer{
-            
-                position: relative;
-                min-width:250px;
-                max-width:500px;
-                min-height:5rem;
-                
-                -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4); 
-                box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
-                margin:1rem;
-            }
-            @media screen and (max-width:274px) {
-                .postContainer{
-                width: 175px; 
-                margin:.5rem;}
-            }
-            
-        }
-    }
-    
-
-}
+ }
 
 //end @media
 
@@ -151,31 +49,47 @@ $blue:#00507f;
                 img{border-radius:100%;}
             }
             
-            .title-content{
-                a{
-                    pointer-events: none;
-                    cursor: default;
+            .contentContainer{
+                .title-content{
+                    div{
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                    margin:1.5rem;
+                    text-align: center;
+                    }
                 }
-            .title-excerpt-link:hover,.title-excerpt-link:active{
-                background:white;
-                
-            }
-            .title-excerpt-link{
-                border-radius:12px;
-                width:80%;
-                h2.title{
-                    font-weight: 700;
-                    margin:2rem 1rem;
- 
+                .content{
+                    font-weight: 600;
+                    p{
+                        margin-left:5rem;
+                        font-family: "Inconsolata", serif;
+                        font-weight: 300;
+                    }
+                    ul{
+
+                    }
+                    .intro{
+                        text-align: center;
+                        font-weight: 400;
+                        font-style: italic;
+                    }
+                    .title{
+                        border-top:1px solid $primary;
+                        padding-top:.5rem;
+                        color:$primary;
+                        margin:1rem 0 1rem 2rem;
+                    }
+                    ul{
+                        margin:1rem 0 0 6rem;
+                        font-weight: 400;
+                        font-family: "Inconsolata", serif;
+                    }
+                    .subtitle{
+                        margin:1rem 0 0 5rem;
+                        
+                    }
                 }
-                p.excerpt{
-                    font-style: italic;
-                    margin:2rem auto;
-                    line-height: 1.5rem;
-                    padding-top:.5rem;
-                    width:80%;
-                }
-            }
+
             }
 
         }
@@ -183,7 +97,7 @@ $blue:#00507f;
     }
 }
 /*Experiences***********************************************************/
-.experiences{
+.experience{
     order:3;
     .mainPostsContainer{
         display:flex;
@@ -195,19 +109,28 @@ $blue:#00507f;
             padding:1rem;
             width:100%;
             display: flex;
+            margin-bottom: 1rem;
             .imgContainer{width:150px;}
-            .title-excerpt-link{
-                h2.title{
-                    font-weight: 700;
-                    margin:2rem 1rem;
+            .contentContainer{
+                .title-content{
+                    font-size: 1.5rem;
+                    margin-bottom:1rem;
                 }
-                p.excerpt{
-                    font-style: italic;
-                    margin:2rem 1rem 1rem 2rem;
-                    padding-top:.5rem;
-                    border-left: #00507f solid 5px;
-                    width:80%;
-                    padding-left:2rem; 
+                .content{
+                    font-weight: 600;
+                    font-size:1.25rem;
+                    line-height: 1.25rem;
+                    ul{
+                       font-weight: 300; 
+                        
+                        li{
+                            margin:1rem;
+                            font-family: "Open Sans", sans-serif;
+                        }
+                    }
+                    margin-left:1rem;
+                    border-left:5px solid $blue;
+                    padding-left: 1rem;
                 }
             }
             

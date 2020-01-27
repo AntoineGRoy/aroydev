@@ -12,14 +12,16 @@ const GalleryItem=(props)=>{
       };
     
     return (
-        <div className={galleryItemStyles.imgContainer} onClick={e => {
+        <button tabindex="0" role ="button" className={galleryItemStyles.imgContainer} onClick={e => {
             showModal(e);
-       }}>
+       }} onKeyDown={e => {
+        showModal(e);
+   }}>
             <Img fluid={fluid}/>
             <Modal show={show}>
                 <Img fluid={fluid}/>
             </Modal>
-        </div>
+        </button>
     )
     
 }

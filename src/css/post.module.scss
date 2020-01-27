@@ -1,11 +1,6 @@
-$primary:rgba(0,0,0,.78);
-$green:#66af99;
-$yellow:#ffbb00;
-$blue:#00507f;
 .post{
     max-width: 1024px;
     margin: 2rem;
-    padding-top:2rem;
     h1{
         font-family: "Roboto"; 
     }
@@ -21,14 +16,6 @@ $blue:#00507f;
     max-width:650px;
     min-width: 250px;
     margin:1rem auto;
-
-    a{
-        color:$blue;
-        text-decoration-line: underline;
-    }
-    a:hover{
-        color:$yellow;
-    }
 }
 .imageContainer{
     height:100%;

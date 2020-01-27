@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import SEO from "../components/seo"
 
+
 const Post= (props)=>{
     const StaticPage = props.data.wordpressPost
     let featuredImg = undefined
