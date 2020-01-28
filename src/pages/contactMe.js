@@ -15,17 +15,17 @@ const ContactMe = () => {
     <div className="formContainer">
     <form method="post" action="https://getform.io/f/086f4ff5-2be7-4c8a-9dc3-00ebe08e6674">
   <label for="email">
-    Email
+    Email{"\n"}
     <input  type="email" name="email" id="email" />
   </label>
   <label for="name">
-    Name
+    Name{"\n"}
     <input type="text" name="name" id="text"/>
   </label>
   <label for="message">
-    Message
+    Message{"\n"}
     <textarea rows="15" type="text" name="message" id="message"></textarea> 
-  </label>
+  </label>{"\n"}
      
   <button type="submit">Send</button>
 </form>
