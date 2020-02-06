@@ -17,10 +17,10 @@ class PostList extends Component {
           {data.map((node) => (
             <div className="postContainer" key={node.slug}>
             {node.featured_media && <div className="imgContainer"><Img fluid={node.featured_media.localFile.childImageSharp.fluid}/></div>}
-              <div className="title-content"><Link className="title-excerpt-link" to={node.slug}>
+              <div className="title-content"><div className="title-excerpt-link">
                 <h2 className="title"><Parser data={node.title}/></h2>
                 <p className="excerpt"><Parser data={node.content}/></p>
-              </Link></div>
+              </div></div>
             </div>
           ))}
           </div>
