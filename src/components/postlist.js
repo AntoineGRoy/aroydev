@@ -19,7 +19,7 @@ class PostList extends Component {
             {node.featured_media && <div className="imgContainer"><Img fluid={node.featured_media.localFile.childImageSharp.fluid}/></div>}
               <div className="title-content"><Link to={node.slug} className="title-excerpt-link">
                 <h2 className="title"><Parser data={node.title}/></h2>
-                <p className="excerpt"><Parser data={node.content}/></p>
+                <p className="excerpt"><Parser data={node.excerpt}/></p>
               </Link></div>
             </div>
           ))}
