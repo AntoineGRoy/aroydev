@@ -13,7 +13,7 @@ class PostList extends Component {
       return (
         <div className={categorySlug}>
         <h1>{categoryName}</h1>
-          <div className="mainPostsContainer">
+          <div className="mainPostsContainer" id="work">
           {data.map((node) => (
             <div className="postContainer" key={node.slug}>
             {node.featured_media && <div className="imgContainer"><Img fluid={node.featured_media.localFile.childImageSharp.fluid}/></div>}
