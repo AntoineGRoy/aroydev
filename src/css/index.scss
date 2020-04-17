@@ -9,6 +9,14 @@ body{
     font-weight: 400;
     color: $primary;   
 }
+content{
+	display:felx;
+	flex-direction:column;
+}
+.about-me{order:1;}
+.work{order:2;}
+.experiences{order:3;}
+
 p{padding-bottom:.75rem;}
 h1{
     font-weight: 500; 
