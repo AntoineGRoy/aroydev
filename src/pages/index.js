@@ -23,7 +23,7 @@ import {
 const IndexPage = () => {
 
   // Import articles from JavaScript file
-  const articlesData = require('../data/articles.js').default;
+  const articlesData = require('../data/articles.js');
   const posts = articlesData;
 
   // Extract unique categories and subcategories
