@@ -17,7 +17,7 @@ const Head = (props)=>{
           htmlAttributes={{ lang: 'en' }}
           meta={[{ 
             name: 'description', 
-            content: 'Antoine Roy is a Web Developer using React - HTML5 - CSS3 - ES6' 
+            content: 'Antoine Roy is a senior software engineer using React - HTML5 - CSS3 - ES6' 
           }]}>
 </Helmet>
         

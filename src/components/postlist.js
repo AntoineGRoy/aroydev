@@ -1,8 +1,6 @@
 import { Link} from "gatsby"
 import Parser from "../components/parser"
-import Img from "gatsby-image"
 import React, { Component } from "react"
-import "../css/postList.scss"
 
 class PostList extends Component {
   render() {
@@ -16,7 +14,7 @@ class PostList extends Component {
           <div className="mainPostsContainer" id="work">
           {data.map((node) => (
             <div className="postContainer" key={node.slug}>
-            {node.featured_media && <div className="imgContainer"><Img fluid={node.featured_media.localFile.childImageSharp.fluid}/></div>}
+            {node.featuredImage && <div className="imgContainer"><img src={node.featuredImage.url} alt={node.featuredImage.alt}/></div>}
               <div className="title-content"><Link to={node.slug} className="title-excerpt-link">
                 <h2 className="title"><Parser data={node.title}/></h2>
                 <p className="excerpt"><Parser data={node.excerpt}/></p>
@@ -33,7 +31,7 @@ class PostList extends Component {
           <div className="mainPostsContainer">
           {data.map((node) => (
             <div className="postContainer" key={node.slug}>
-            {node.featured_media && <div className="imgContainer"><Img fluid={node.featured_media.localFile.childImageSharp.fluid}/></div>}
+            {node.featuredImage && <div className="imgContainer"><img src={node.featuredImage.url} alt={node.featuredImage.alt}/></div>}
                 <div className="contentContainer">
                   <div className="title-content">
                     <Parser data={node.title}/>

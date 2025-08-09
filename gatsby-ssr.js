@@ -4,4 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+// Import Roboto font for MUI SSR
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
