@@ -437,4 +437,4 @@ const articles = [
   }
 ];
 
-export default articles; 
+module.exports = articles; 

@@ -4,7 +4,7 @@ exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
 
   // Import articles from JavaScript file
-  const articlesData = require('./src/data/articles.js').default;
+  const articlesData = require('./src/data/articles.js');
 
   articlesData.forEach(article => {
     createPage({
@@ -24,7 +24,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   const { createNode } = actions;
   
   // Import articles from JavaScript file
-  const articlesData = require('./src/data/articles.js').default;
+  const articlesData = require('./src/data/articles.js');
 
   // Create nodes for each article
   articlesData.forEach(article => {
