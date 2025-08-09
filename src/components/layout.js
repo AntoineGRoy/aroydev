@@ -10,7 +10,7 @@ import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import Header from "./header"
 import Footer from "./footer"
-import theme from '../theme'
+import theme from '../theme-simple'
 
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
