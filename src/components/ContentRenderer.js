@@ -14,8 +14,7 @@ import {
   AlertTitle,
   Card,
   CardContent,
-  Grid,
-  Avatar
+  Grid
 } from '@mui/material';
 import {
   CheckCircle as CheckIcon,
@@ -260,7 +259,7 @@ const ContentRenderer = ({ content }) => {
       <Grid container spacing={2} sx={{ mb: 2 }}>
         {features.map((feature, index) => (
           <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-            <Card elevation={1} sx={{ height: '100%' }}>
+            <Card elevation={2} sx={{ height: '100%' }}>
               <CardContent>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <StarIcon sx={{ mr: 1, color: 'primary.main', fontSize: 20 }} />

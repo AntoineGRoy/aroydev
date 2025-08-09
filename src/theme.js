@@ -98,11 +98,10 @@ const theme = createTheme({
         root: {
           backgroundColor: '#fff',
           borderRadius: 12,
-          padding:'20px',
-          boxShadow: '0px 4px 20px rgba(0,0,0,0.3)',
-          transition: 'box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out',
+          boxShadow: '0px 4px 20px rgba(0,0,0,0.1)',
+          transition: 'all 0.2s ease-in-out',
           '&:hover': {
-            boxShadow: '0px 8px 30px rgba(0,0,0,0.4)',
+            boxShadow: '0px 8px 30px rgba(0,0,0,0.15)',
             transform: 'translateY(-2px)',
           },
         },
@@ -111,9 +110,9 @@ const theme = createTheme({
     MuiCardContent: {
       styleOverrides: {
         root: {
-          padding: '0px',
+          padding: '20px',
           '&:last-child': {
-            paddingBottom: '0px',
+            paddingBottom: '20px',
           },
         },
       },

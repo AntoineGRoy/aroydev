@@ -427,12 +427,12 @@ const articles = [
         React Context is a powerful tool, but it comes with performance trade-offs. By implementing a fast context pattern, we can maintain the simplicity and developer experience of Context while achieving the performance characteristics of external state management libraries.
       `},
       { type: 'paragraph', text: `
-        The key insight is that we don\'t need to rely on React\'s built-in context re-rendering mechanism. By implementing our own subscription system and using useSyncExternalStore, we can create a context that only re-renders components when their specific data changes.
+        The key insight is that we don't need to rely on React's built-in context re-rendering mechanism. By implementing our own subscription system and using useSyncExternalStore, we can create a context that only re-renders components when their specific data changes.
       `},
       { type: 'paragraph', text: `
         This approach scales well and provides predictable performance characteristics, making it suitable for large, performance-critical applications. The implementation is relatively simple but provides significant performance benefits.
       `},
-      { type: 'quote', text: 'Performance optimization is not about premature optimization—it\'s about building the right architecture from the start.' }
+      { type: 'quote', text: 'Performance optimization is not about premature optimization - it\'s about building the right architecture from the start.' }
     ]
   }
 ];

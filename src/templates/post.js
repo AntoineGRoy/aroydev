@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import ContentRenderer from "../components/ContentRenderer"
 import { 
   Container, 
@@ -24,7 +24,7 @@ const Post = ({ pageContext }) => {
   return (
     <Layout>
       <Head pageTitle={post.title} />
-      <SEO title={post.title} />
+      <Seo title={post.title} />
 
       <Container maxWidth="lg" sx={{ py: 4, mt: 8 }}>
         {/* Back to Home Link */}
@@ -86,7 +86,7 @@ const Post = ({ pageContext }) => {
         {/* Featured Image */}
         {featuredImg && (
           <Box sx={{ mb: 4 }}>
-            <Card sx={{ overflow: 'hidden' }}>
+            <Card elevation={2} sx={{ overflow: 'hidden' }}>
               <CardMedia
                 component="img"
                 height="400"

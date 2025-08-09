@@ -1,24 +1,18 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import Head from "../components/head"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PostList from "../components/postlist"
+import Seo from "../components/seo"
 import Icon from "../assets/logo.svg"
 import { 
   Box, 
   Container, 
   Typography, 
-  Grid,
   Card, 
   CardContent, 
   Chip
 } from '@mui/material'
-import { 
-  Work as WorkIcon, 
-  Person as PersonIcon, 
-  Timeline as TimelineIcon 
-} from '@mui/icons-material'
+import Grid from '@mui/material/Grid2'
 
 const IndexPage = () => {
 
@@ -51,7 +45,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head pageTitle="Home" />
-      <SEO title="Home" />
+      <Seo title="Home" />
       
       {/* Hero Section */}
       <Box
@@ -110,33 +104,22 @@ const IndexPage = () => {
             </Box>
             
             {/* Articles Grid */}
-            <Grid container spacing={3}>
+            <Grid container spacing={6}>
               {articles.map((article) => (
                 <Grid size={{ xs: 12, md: 6, lg: 4 }} key={article.id}>
                   <Card 
                     component={Link}
                     to={`/${article.slug}/`}
+                    elevation={2}
                     sx={{ 
                       height: '100%',
                       display: 'flex',
                       flexDirection: 'column',
-                      transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
                       textDecoration: 'none',
                       color: 'inherit',
-                      maxWidth: '300px',
-                      '&:hover': {
-                        transform: 'translateY(-4px)',
-                        boxShadow: 4,
-                        textDecoration: 'none',
-                        color: 'inherit'
-                      }
+                      maxWidth: '350px'
                     }}
                   >
-                    {article.featuredImage && (
-                      <Card
-                        height="200"
-                      />
-                    )}
                     <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                       <Typography variant="h6" component="h3" gutterBottom sx={{ fontWeight: 600 }}>
                         {article.title}

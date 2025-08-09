@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "../components/head"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 
 
@@ -10,7 +10,7 @@ const ContactMe = () => {
   return(
   <Layout>
     <Head pageTitle="Contact"/>
-    <SEO title="Contact Antoine Roy" />
+    <Seo title="Contact Antoine Roy" />
     <h1 className="contactHeader">Contact <span>the Web Developer</span> Antoine Roy</h1>
     <div className="formContainer">
     <form method="post" action="https://getform.io/f/086f4ff5-2be7-4c8a-9dc3-00ebe08e6674">
