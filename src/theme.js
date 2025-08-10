@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-const primaryColor = 'rgba(1, 30, 87, 0.78)';
+const primaryColor = '#00507e';
 const secondaryColor = 'rgba(255, 181, 32, 0.94)';
 
 const theme = createTheme({
@@ -99,11 +99,6 @@ const theme = createTheme({
           backgroundColor: '#fff',
           borderRadius: 12,
           boxShadow: '0px 4px 20px rgba(0,0,0,0.1)',
-          transition: 'all 0.2s ease-in-out',
-          '&:hover': {
-            boxShadow: '0px 8px 30px rgba(0,0,0,0.15)',
-            transform: 'translateY(-2px)',
-          },
         },
       },
     },
@@ -129,6 +124,19 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           fontFamily: 'Roboto, Arial, sans-serif',
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none',
+          fontWeight: 'bold',
+          '&:hover': {
+            textDecoration: 'none',
+            transform: 'scale(1.02)',
+            transition: 'transform 0.2s ease-in-out',
+          },
         },
       },
     },

@@ -28,9 +28,6 @@ const articles = [
         My professional path didn’t start with code. It started with logic & Philosophy.  
         After earning a **Bachelor’s in Philosophy** and a **Master’s in Pedagogy**, I spent more than a decade as an **educator and digital education advisor**, deploying tools that helped teachers impact classrooms across continents —from Europe to the Amazonian rainforest, the Caribbean to the U.S.
       `},
-      { type: "paragraph", text: `
-        Teaching taught me more than pedagogy. It trained me to communicate complexity, to stay curious, and to think systemically. It also taught me one important truth: **technology, when well-designed, unlocks potential**.
-      `},
       
       { type: "heading", text: "Learning the Language of the Web" },
       { type: "paragraph", text: `

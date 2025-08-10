@@ -10,7 +10,8 @@ import {
   Typography, 
   Card, 
   CardContent, 
-  Chip
+  Chip,
+  Button
 } from '@mui/material'
 import Grid from '@mui/material/Grid2'
 
@@ -86,8 +87,24 @@ const IndexPage = () => {
           >
             Senior Software Engineer & Creative Technologist
           </Typography>
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
             <Icon style={{ height: '4rem', maxWidth: '350px' }} />
+          </Box>
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Button
+              component={Link}
+              to="/resume/"
+              variant="contained"
+              size="large"
+              sx={{
+                px: 4,
+                py: 1.5,
+                fontSize: '1.1rem',
+                fontWeight: 500
+              }}
+            >
+              View Resume
+            </Button>
           </Box>
         </Container>
       </Box>

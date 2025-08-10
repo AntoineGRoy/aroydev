@@ -12,14 +12,27 @@ const Header = (props) => {
     <AppBar position="fixed" color="default" elevation={1} sx={{ backgroundColor: 'white' }}>
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <GatsbyImage 
-              image={logo}
-              style={{ width: 37, height: 37, marginTop: -10 }} 
-              alt={siteMetadata.title} 
-            />
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+            <Box
+              sx={{
+                '&:hover': {
+                  transform: 'scale(1.02)',
+                  transition: 'transform 0.2s ease-in-out'
+                }
+              }}
+            >
+              <GatsbyImage 
+                image={logo}
+                style={{ 
+                  width: 37, 
+                  height: 37, 
+                  marginTop: -10
+                }} 
+                alt={siteMetadata.title} 
+              />
+            </Box>
+            <Typography variant="h6" component="h1" sx={{ fontWeight: 600, ml: 2, height: 37, color:'primary.main' }}>Antoine Roy - SSE</Typography>
           </Link>
-          <Typography variant="h6" component="h1" sx={{ fontWeight: 600, ml: 2, height: 37, color:'primary.main' }}>Antoine Roy - SSE</Typography>
         </Box>
         <Button
           href="mailto:antoineroy.dev@gmail.com"
