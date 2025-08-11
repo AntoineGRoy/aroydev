@@ -92,6 +92,20 @@ const theme = createTheme({
           fontWeight: 500,
         },
       },
+      variants: [
+        {
+          props: { variant: 'contrast' },
+          style: {
+            border: '1px solid white',
+            color: 'white',
+            backgroundColor: 'transparent',
+            '&:hover': {
+              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              border: '1px solid white',
+            },
+          },
+        },
+      ],
     },
     MuiCard: {
       styleOverrides: {

@@ -51,7 +51,7 @@ const IndexPage = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg,rgb(2, 110, 173) 0%,rgb(9, 17, 77) 100%)',
+          background: 'linear-gradient(135deg,rgba(0, 126, 199, 0.9) 0%,rgba(0, 6, 10, 0.9) 100%)',
           color: 'white',
           py: 10,
           mt: 8, // Account for fixed header
@@ -94,7 +94,7 @@ const IndexPage = () => {
             <Button
               component={Link}
               to="/resume/"
-              variant="contained"
+              variant="contrast"
               size="large"
               sx={{
                 px: 4,
