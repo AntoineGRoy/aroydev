@@ -118,7 +118,7 @@ const articles = [
       "tech debt"
     ],
     categories: [
-      "Projects","Design Systems"
+      "Blog","Design Systems"
     ],
     content: [
       { type: 'heading', text: 'What problem are we trying to solve?' },
@@ -307,7 +307,7 @@ const articles = [
       "Context"
     ],
     categories: [
-      "Projects"
+      "Blog"
     ],
     content: [
       { type: 'heading', text: 'What is React Context?' },
@@ -431,6 +431,127 @@ const articles = [
       `},
       { type: 'quote', text: 'Performance optimization is not about premature optimization - it\'s about building the right architecture from the start.' }
     ]
+  },
+  {
+    id: "4",
+    title: "Frontend Fun: Framer Motion",
+    slug: "technical-deepdive-framer-motion",
+    date: "2025-09-02",
+    excerpt: "Exploring the power of Framer Motion for creating delightful animations in React applications, with practical examples and performance considerations.",
+    tags: [
+      "Framer Motion",
+      "React",
+      "Animation",
+      "UI/UX",
+      "Performance",
+      "SVG",
+      "Interactive Design",
+      "Motion Design",
+      "Frontend Development",
+      "User Experience"
+    ],
+    categories: [
+      "Frontend Fun"
+    ],
+    content: [
+      { type: "heading", text: "What is Framer Motion?" },
+      { type: "paragraph", text: `
+        **Framer Motion** is a powerful animation library for React that makes it incredibly easy to create smooth, performant animations and interactions. 
+        Built on top of the Framer animation engine, it provides a declarative API that feels natural to React developers while offering the flexibility to create complex motion designs.
+      `},
+      { type: "paragraph", text: `
+        As a frontend engineer, I've always been fascinated by the intersection of **code and creativity**. 
+        Animation isn't just about making things move—it's about **enhancing user experience**, **providing feedback**, and **creating emotional connections** with your users.
+      `},
+      
+      { type: "heading", text: "Why Animation Matters" },
+      { type: "paragraph", text: `
+        Good animation serves several critical purposes in modern web applications:
+      `},
+      { type: "list", items: [
+        "**Visual feedback**: Users understand what's happening when they interact with your interface",
+        "**Spatial relationships**: Animations help users understand how different parts of your app relate to each other",
+        "**Brand personality**: Motion can reinforce your brand's character and values",
+        "**Perceived performance**: Well-crafted animations can make your app feel faster and more responsive",
+        "**Accessibility**: Motion can help users with cognitive disabilities understand interface changes"
+      ]},
+      
+      { type: "heading", text: "Getting Started with Framer Motion" },
+      { type: "paragraph", text: `
+        Framer Motion's API is designed to be intuitive. The core concept is simple: you replace regular HTML elements with motion components and add animation properties.
+      `},
+      { type: "paragraph", text: `
+        Here's a basic example of how easy it is to get started:
+      `},
+      { type: "quote", text: "The beauty of Framer Motion lies in its simplicity. What used to require complex CSS animations or JavaScript can now be achieved with just a few props." },
+      
+      { type: "heading", text: "Key Features That Make Framer Motion Special" },
+      { type: "list", items: [
+        "**Declarative animations**: Define animations as props, not imperative code",
+        "**Layout animations**: Automatic animations when elements are added, removed, or reordered",
+        "**Gesture support**: Built-in support for drag, hover, tap, and scroll gestures",
+        "**Variants**: Reusable animation definitions that can be shared across components",
+        "**Orchestration**: Control the timing and sequence of multiple animations",
+        "**Performance**: Optimized for 60fps animations with automatic will-change properties",
+        "**Accessibility**: Respects user preferences for reduced motion"
+      ]},
+      
+      { type: "heading", text: "A Creative Example: Sustainability in Motion" },
+      { type: "paragraph", text: `
+        I love combining **technical skills with creative expression**. 
+        To demonstrate Framer Motion's capabilities, I created an interactive SVG animation that tells a story about sustainability.
+      `},
+      { type: "paragraph", text: `
+        The animation features a plant that turns off a light, illustrating the concept of **energy conservation** and **environmental responsibility**. 
+        This isn't just a technical demo—it's a way to use motion design to communicate important messages.
+      `},
+      { type: "link", text: "Explore the interactive animation", url: "https://roy-a.name/a-roy.me/react-motion/" },
+      
+      { type: "heading", text: "Performance Considerations" },
+      { type: "paragraph", text: `
+        While Framer Motion makes animation easy, it's important to understand the performance implications:
+      `},
+      { type: "list", items: [
+        "**Use transform and opacity**: These properties are GPU-accelerated and perform best",
+        "**Avoid animating layout properties**: Animating width, height, or position can cause expensive reflows",
+        "**Leverage will-change**: Framer Motion automatically adds this, but be mindful of overuse",
+        "**Consider reduced motion**: Always respect user preferences for accessibility",
+        "**Test on lower-end devices**: What looks smooth on your development machine might not on older hardware"
+      ]},
+      
+      { type: "heading", text: "Best Practices for Motion Design" },
+      { type: "paragraph", text: `
+        Creating great animations isn't just about technical implementation—it's about **design principles**:
+      `},
+      { type: "list", items: [
+        "**Easing matters**: Use natural easing curves that feel organic, not mechanical",
+        "**Timing is everything**: Animations should feel snappy but not rushed",
+        "**Consistency**: Establish animation patterns that users can learn and expect",
+        "**Purpose-driven**: Every animation should serve a functional purpose",
+        "**Subtlety**: Sometimes the best animation is the one users don't consciously notice"
+      ]},
+      
+      { type: "heading", text: "Advanced Techniques" },
+      { type: "paragraph", text: `
+        Once you're comfortable with the basics, Framer Motion offers powerful advanced features:
+      `},
+      { type: "list", items: [
+        "**Layout animations**: Automatic animations when components mount, unmount, or reorder",
+        "**Shared layout**: Create smooth transitions between different views of the same content",
+        "**Scroll-triggered animations**: Animate elements as they come into view",
+        "**Complex gesture handling**: Multi-touch, drag constraints, and gesture recognition",
+        "**Custom easing functions**: Create unique animation curves for your brand"
+      ]},
+      
+      { type: "heading", text: "The Intersection of Code and Art" },
+      { type: "paragraph", text: `
+        What I love most about working with Framer Motion is how it bridges the gap between **engineering and design**. 
+        As developers, we often focus on functionality, but animation reminds us that **user experience is emotional**.
+      `},
+      { type: "paragraph", text: `
+        The plant animation I created isn't just a technical demonstration—it's a **story told through code**. 
+        It shows how we can use our technical skills to create something that resonates with users on a deeper level.
+      `}]
   }
 ];
 
