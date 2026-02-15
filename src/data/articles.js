@@ -455,6 +455,7 @@ const articles = [
     ],
     content: [
       { type: "heading", text: "What is Framer Motion?" },
+      { type: "link", text: "Explore the interactive animation", url: "https://roy-a.name/a-roy.me/react-motion/" },
       { type: "paragraph", text: `
         **Framer Motion** is a powerful animation library for React that makes it incredibly easy to create smooth, performant animations and interactions. 
         Built on top of the Framer animation engine, it provides a declarative API that feels natural to React developers while offering the flexibility to create complex motion designs.
