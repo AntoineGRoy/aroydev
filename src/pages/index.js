@@ -185,12 +185,11 @@ const IndexPage = () => {
 
       {/* Content Sections */}
       <Container maxWidth="lg" sx={{ py: 6 }}>
-        {wpLoading && (
+        {wpLoading ? (
           <Box sx={{ display: 'flex', justifyContent: 'center', py: 4 }}>
             <CircularProgress />
           </Box>
-        )}
-        {articlesByCategory.map(({ category, articles }, index) => {
+        ) : articlesByCategory.map(({ category, articles }, index) => {
           // Check if this is "About Me" and next is "Blog" to display side by side
           const isAboutMe = category === "About Me";
           const nextCategory = articlesByCategory[index + 1];
