@@ -189,18 +189,7 @@ const IndexPage = () => {
           <Box sx={{ display: 'flex', justifyContent: 'center', py: 4 }}>
             <CircularProgress />
           </Box>
-        ) : articlesByCategory.map(({ category, articles }, index) => {
-          // Check if this is "About Me" and next is "Blog" to display side by side
-          const isAboutMe = category === "About Me";
-          const nextCategory = articlesByCategory[index + 1];
-          const isBlogNext = nextCategory?.category === "Blog";
-          const shouldDisplaySideBySide = isAboutMe && isBlogNext;
-
-          // If this is Blog and previous was About Me, skip rendering (already rendered)
-          const prevCategory = articlesByCategory[index - 1];
-          const isBlogAfterAboutMe = category === "Blog" && prevCategory?.category === "About Me";
-          if (isBlogAfterAboutMe) return null;
-
+        ) : articlesByCategory.map(({ category, articles }) => {
           const renderArticleCard = (article) => {
             const slug = article.isWpPost && WP_PAGE_PATHS[article.wpPostId]
               ? WP_PAGE_PATHS[article.wpPostId]
@@ -208,7 +197,7 @@ const IndexPage = () => {
             const linkPath = `/${slug}/`
             
             return (
-              <Grid size={{ xs: 12, md: 6, lg: 4 }} key={article.id}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={article.id}>
                 <Card 
                   component={Link}
                   to={linkPath}
@@ -218,8 +207,7 @@ const IndexPage = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     textDecoration: 'none',
-                    color: 'inherit',
-                    maxWidth: '350px'
+                    color: 'inherit'
                   }}
                 >
                   <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
@@ -255,38 +243,6 @@ const IndexPage = () => {
               </Grid>
             )
           };
-
-          // Render About Me and Blog side by side
-          if (shouldDisplaySideBySide) {
-            return (
-              <Box key={`${category}-${nextCategory.category}`} sx={{ mb: 6 }}>
-                <Grid container spacing={4}>
-                  {/* About Me Section */}
-                  <Grid size={{ xs: 12, md: 6 }}>
-                    <Box sx={{ mb: 4 }}>
-                      <Typography variant="h4" component="h2" sx={{ fontWeight: 500, mb: 4 }}>
-                        {category}
-                      </Typography>
-                      <Grid container spacing={6}>
-                        {articles.map(renderArticleCard)}
-                      </Grid>
-                    </Box>
-                  </Grid>
-                  {/* Blog Section */}
-                  <Grid size={{ xs: 12, md: 6 }}>
-                    <Box sx={{ mb: 4 }}>
-                      <Typography variant="h4" component="h2" sx={{ fontWeight: 500, mb: 4 }}>
-                        {nextCategory.category}
-                      </Typography>
-                      <Grid container spacing={6}>
-                        {nextCategory.articles.map(renderArticleCard)}
-                      </Grid>
-                    </Box>
-                  </Grid>
-                </Grid>
-              </Box>
-            );
-          }
 
           // Regular single section rendering
           return (
